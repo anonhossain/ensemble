@@ -1,51 +1,44 @@
-🧠 Health Behavior Prediction Using Ensemble Learning
-📌 Project Overview
-This project presents a hands-on, project-based learning approach focused on building a predictive model to analyze and classify health-related behaviors, particularly smoking and drinking status, using physiological and lifestyle features.
+# 🧠 Health Behavior Prediction Using Ensemble Learning
 
-🔍 Key Highlights
-📊 Data Preprocessing:
+## 📌 Project Overview  
+This project demonstrates a hands-on approach to building a predictive model aimed at classifying health-related behaviors—specifically smoking and drinking status—based on physiological and lifestyle features. It follows a complete machine learning pipeline including preprocessing, feature engineering, model building, evaluation, and deployment.
 
-Cleaned and handled missing values
+---
 
-Converted categorical variables to numerical format
+## 🔍 Key Highlights
 
-Normalized and scaled data for model performance
+### 📊 Data Preprocessing
+- Cleaned dataset and handled missing values
+- Encoded categorical variables into numerical format
+- Normalized and scaled data for better model performance
 
-🧬 Feature Engineering:
+### 🧬 Feature Engineering
+- Engineered new features like **BMI** from height and weight
+- Ranked features based on importance using tree-based models
 
-Created new features such as BMI from height and weight
+### 📤 Data Splitting
+- Used an 80-20 train-test split to evaluate model generalization
 
-Ranked features based on their importance and impact using various models (e.g., feature importance from tree-based models)
+### 🧠 Machine Learning Techniques
+- Implemented **Bagging**, **Voting**, **Boosting**, and **Stacking** classifiers
+- Evaluated models using **Accuracy**, **ROC-AUC**, and **Confusion Matrix**
 
-📤 Data Splitting:
+### 📈 Hyperparameter Tuning
+- Applied **GridSearchCV** to find the best parameter combinations
+- Tuned **XGBoost** and **LightGBM** for optimal performance
 
-Reserved 20% of the dataset for testing to evaluate model generalization
+### 🔁 Cross-Validation
+- Used **K-Fold Cross-Validation** on XGBoost for stability and robustness
+- Exported the final model as a `.joblib` file for deployment
 
-🧠 Machine Learning Techniques:
+---
 
-Implemented Bagging, Voting, Boosting, and Stacking classifiers
+## 🧰 Technologies Used
+- **Python**: Pandas, NumPy, Scikit-learn, XGBoost, LightGBM  
+- **Visualization**: Matplotlib, Seaborn  
+- **Model Serialization**: Joblib  
 
-Evaluated performance through accuracy, ROC-AUC, and confusion matrix
+---
 
-📈 Hyperparameter Tuning:
-
-Applied GridSearchCV for exhaustive search over hyperparameter combinations
-
-Optimized both XGBoost and LightGBM classifiers for best performance
-
-🔁 Cross-Validation:
-
-Used K-Fold Cross-Validation on XGBoost to ensure stable and reliable results
-
-Final model exported as a .joblib file for deployment
-
-🧰 Technologies Used
-Python (Pandas, NumPy, Scikit-learn, XGBoost, LightGBM)
-
-Matplotlib & Seaborn (for EDA and visualization)
-
-Joblib (for model serialization)
-
-🎯 Outcome
-Successfully trained and evaluated multiple ensemble learning models, selected the best-performing one using k-fold cross-validation and hyperparameter tuning, and saved it for future use.
-
+## 🎯 Outcome
+Trained and evaluated multiple ensemble models. The best-performing model—optimized using hyperparameter tuning and validated with K-Fold CV—was saved for future deployment and prediction tasks.
